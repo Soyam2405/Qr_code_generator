@@ -18,7 +18,9 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     max-width: 500px;
     width: 100%;
+   
 }
+
 
 h1 {
     text-align: center;
@@ -72,10 +74,17 @@ button:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-#qrcode {
+.qr-code{
+    max-height: 0px;
+    overflow: hidden;
+    margin: 30px auto;
     display: flex;
     justify-content: center;
 }
+.qr-code.show-image{
+    max-height: 300px;
+}
+
 
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
